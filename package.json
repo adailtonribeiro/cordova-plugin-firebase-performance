@@ -1,0 +1,34 @@
+{
+  "name": "cordova-plugin-firebase-performance",
+  "version": "0.0.1",
+  "description": "Cordova plugin for Firebase Performance",
+  "cordova": {
+    "id": "cordova-plugin-firebase-performance",
+    "platforms": [
+      "ios",
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adailtonribeiro/cordova-plugin-firebase-performance.git"
+  },
+  "author": "Adailton Ribeiro <adailton.ribeiro1@gmail.com> (https://github.com/adailtonribeiro)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/adailtonribeiro/cordova-plugin-firebase-performance/issues"
+  },
+  "homepage": "https://github.com/adailtonribeiro/cordova-plugin-firebase-performance#readme",
+  "keywords": [
+    "cordova",
+    "firebase",
+    "performance",
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios"
+  ],
+  "scripts": {
+    "version": "replace -s 'version=\"(.+)(?=\">)' 'version=\"'$npm_package_version plugin.xml && git add plugin.xml",
+    "postversion": "git push && git push --tags"
+  }
+}
