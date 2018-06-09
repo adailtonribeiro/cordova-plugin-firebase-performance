@@ -39,4 +39,5 @@ jspm_packages
 # Webstorm
 .idea/
 
+.gradle
 .DS_Store
