@@ -11,7 +11,8 @@ xmlns:android="http://schemas.android.com/apk/res/android"
     <issue>https://github.com/adailtonribeiro/cordova-plugin-firebase-performance/issues</issue>
 
     <js-module src="www/FirebasePerformance.js" name="FirebasePerformance">
-        <merges target="cordova.plugins.firebase.performance" />
+        <clobbers target="FirebasePerformance" />
+        <!--<merges target="cordova.plugins.firebase.performance" />-->
     </js-module>
 
     <engines>
