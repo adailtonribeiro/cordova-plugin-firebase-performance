@@ -1,7 +1,7 @@
 {
   "name": "cordova-plugin-firebase-performance",
   "version": "0.0.2",
-  "description": "Cordova plugin for Firebase Performance",
+  "description": "Cordova plugin for Firebase Performance Monitoring",
   "cordova": {
     "id": "cordova-plugin-firebase-performance",
     "platforms": [
@@ -23,6 +23,7 @@
     "cordova",
     "firebase",
     "performance",
+    "monitoring",
     "ecosystem:cordova",
     "cordova-android",
     "cordova-ios"
