@@ -1,7 +1,7 @@
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
 xmlns:android="http://schemas.android.com/apk/res/android"
            id="cordova-plugin-firebase-performance"
-      version="0.0.2">
+      version="0.0.4">
 
     <name>FirebasePerformancePlugin</name>
     <description>Cordova plugin for Firebase Performance</description>
@@ -33,7 +33,7 @@ xmlns:android="http://schemas.android.com/apk/res/android"
         <source-file src="src/ios/FirebasePerformancePlugin.m" />
 
         <framework src="Firebase/Core" type="podspec" spec="~> 5.0"/>
-        <framework src="Firebase/Performance" type="podspec" spec="~> 5.0"/>
+        <framework src="Firebase/Performance" type="podspec" spec="~> 2.0"/>
     </platform>
 
     <platform name="android">
