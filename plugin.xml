@@ -1,7 +1,7 @@
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
 xmlns:android="http://schemas.android.com/apk/res/android"
            id="cordova-plugin-firebase-performance"
-      version="0.0.6">
+      version="0.0.7">
 
     <name>FirebasePerformancePlugin</name>
     <description>Cordova plugin for Firebase Performance</description>
@@ -54,7 +54,7 @@ xmlns:android="http://schemas.android.com/apk/res/android"
         </config-file>
 
         <!--<dependency id="cordova-support-android-plugin" version="~0.3.7"/>-->
-        <dependency id="cordova-support-google-services" version="~1.1.0"/>
+        <dependency id="cordova-support-google-services" version="^1.1.0"/>
 
         <framework src="com.google.firebase:firebase-perf:$FIREBASE_PERF_VERSION" />
         <!--<framework src="src/android/build.gradle" custom="true" type="gradleReference" />-->
