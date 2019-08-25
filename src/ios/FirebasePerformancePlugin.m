@@ -45,7 +45,7 @@
         FIRTrace *trace = (FIRTrace*)[self.traces objectForKey:traceName];
         
         if (trace != nil) {
-            [trace incrementCounterNamed:counterNamed];
+            [trace incrementMetric:counterNamed byInt:1];
             [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
         } else {
             pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_ERROR messageAsString:@"Trace not found"];
