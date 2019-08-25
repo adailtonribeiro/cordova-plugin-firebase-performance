@@ -79,7 +79,7 @@ public class FirebasePerformancePlugin extends CordovaPlugin {
           }
 
           if (myTrace != null) {
-            myTrace.incrementCounter(counterNamed);
+            myTrace.incrementMetric(counterNamed, 1);
             callbackContext.success();
           } else {
             callbackContext.error("Trace not found");
