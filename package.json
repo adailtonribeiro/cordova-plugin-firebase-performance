@@ -1,6 +1,6 @@
 {
   "name": "cordova-plugin-firebase-performance",
-  "version": "0.3.0",
+  "version": "0.5.0",
   "description": "Cordova plugin for Firebase Performance Monitoring",
   "cordova": {
     "id": "cordova-plugin-firebase-performance",
@@ -29,7 +29,8 @@
     "cordova-ios"
   ],
   "scripts": {
-    "version": "replace -s 'version=\"(.+)(?=\">)' 'version=\"'$npm_package_version plugin.xml && git add plugin.xml",
-    "postversion": "git push && git push --tags"
-  }
+    "version": "node ./bump-version.js && git add -A plugin.xml",
+    "postversion": "git push && git push --tags && npm publish --verbose"
+  },
+  "devDependencies": {}
 }
