@@ -11,6 +11,25 @@
 - Android
 
 ## Methods
+Every method returns a promise that fulfills when a call was successful.
+
+### startTrace(traceName)
+Start a custom trace.
+```js
+window.FirebasePerformance.startTrace("my_trace");
+```
+
+### incrementMetric(traceName, metricName)
+Increment a custom metric.
+```js
+window.FirebasePerformance.incrementMetric("my_trace", "my_metric_1");
+```
+
+### stopTrace(traceName)
+Stop the custom trace.
+```js
+window.FirebasePerformance.stopTrace("my_trace");
+```
 
 [npm-url]: https://www.npmjs.com/package/cordova-plugin-firebase-performance
 [npm-version]: https://img.shields.io/npm/v/cordova-plugin-firebase-performance.svg

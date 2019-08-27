@@ -37,15 +37,15 @@
     }];
 }
 
-- (void)incrementCounter:(CDVInvokedUrlCommand *)command {
+- (void)incrementMetric:(CDVInvokedUrlCommand *)command {
     [self.commandDelegate runInBackground:^{
         NSString* traceName = [command.arguments objectAtIndex:0];
-        NSString* counterNamed = [command.arguments objectAtIndex:1];
+        NSString* metricName = [command.arguments objectAtIndex:1];
         CDVPluginResult *pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK];
         FIRTrace *trace = (FIRTrace*)[self.traces objectForKey:traceName];
         
         if (trace != nil) {
-            [trace incrementMetric:counterNamed byInt:1];
+            [trace incrementMetric:metricName byInt:1];
             [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
         } else {
             pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_ERROR messageAsString:@"Trace not found"];

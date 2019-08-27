@@ -1,12 +1,12 @@
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
 xmlns:android="http://schemas.android.com/apk/res/android"
            id="cordova-plugin-firebase-performance"
-      version="0.2.0">
+      version="0.3.0">
 
     <name>FirebasePerformancePlugin</name>
     <description>Cordova plugin for Firebase Performance</description>
     <license>MIT</license>
-    <keywords>cordova, firebase, performance</keywords>
+    <keywords>cordova, firebase, performance, monitoring</keywords>
     <repo>https://github.com/adailtonribeiro/cordova-plugin-firebase-performance</repo>
     <issue>https://github.com/adailtonribeiro/cordova-plugin-firebase-performance/issues</issue>
 
